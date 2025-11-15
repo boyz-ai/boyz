@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Tetrix</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>Web Tetrix</h1>
+        <p>
+          Ok tuşları ile blokları hareket ettirebilir, <strong>Boşluk</strong>
+          ile hemen aşağıya bırakabilirsiniz. Oyunu başlatmak için aşağıdaki
+          butona tıklayın.
+        </p>
+        <div class="controls">
+          <button id="start-btn">Başlat</button>
+          <button id="pause-btn">Duraklat</button>
+          <button id="reset-btn">Sıfırla</button>
+        </div>
+      </header>
+
+      <section class="game">
+        <div class="board" id="board" aria-label="Tetrix oyun alanı"></div>
+        <aside>
+          <div class="panel">
+            <h2>Puan</h2>
+            <p id="score">0</p>
+          </div>
+          <div class="panel">
+            <h2>Satır</h2>
+            <p id="lines">0</p>
+          </div>
+          <div class="panel">
+            <h2>Sıradaki</h2>
+            <canvas id="preview" width="80" height="80" aria-label="Sıradaki taş"></canvas>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <script src="tetris.js"></script>
+  </body>
+</html>
